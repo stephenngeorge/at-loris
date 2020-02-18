@@ -1,4 +1,8 @@
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam mi metus, facilisis et eros a, 
+// this is a comment
+// here's some more comment text
+// final line of comments
+
+const text = `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam mi metus, facilisis et eros a, 
 vehicula fringilla diam. Nam ornare dui sed tortor vulputate suscipit. Morbi non lorem tellus. 
 Donec hendrerit odio sit amet erat mattis, sit amet lobortis quam finibus. Phasellus fringilla 
 leo nec velit pharetra, sed vestibulum ligula egestas. Etiam tempor pellentesque dui auctor 
@@ -32,4 +36,4 @@ leo blandit, luctus gravida libero bibendum. Mauris id augue commodo, convallis 
 Vivamus eget ipsum eu tortor imperdiet aliquam vel ac elit. Proin tempor nec lacus id iaculis. Mauris non 
 enim vitae ligula volutpat consequat eget sit amet justo. Quisque nisl mauris, iaculis aliquam rutrum vitae, 
 blandit sit amet mauris. Mauris in hendrerit ante, ac maximus lacus. Sed in egestas sem, vel dignissim 
-ipsum. Duis euismod scelerisque sem, et elementum dui tempor non.
+ipsum. Duis euismod scelerisque sem, et elementum dui tempor non.`
