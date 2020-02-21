@@ -1,6 +1,7 @@
-// this is a comment
-// here's some more comment text
-// final line of comments
+/** 1 Here's a multiline comment block
+ * 2 Testing the second line
+ 3 does this line get read 
+ 4 is this still a comment? */
 
 const text = `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam mi metus, facilisis et eros a, 
 vehicula fringilla diam. Nam ornare dui sed tortor vulputate suscipit. Morbi non lorem tellus. 
@@ -37,3 +38,10 @@ Vivamus eget ipsum eu tortor imperdiet aliquam vel ac elit. Proin tempor nec lac
 enim vitae ligula volutpat consequat eget sit amet justo. Quisque nisl mauris, iaculis aliquam rutrum vitae, 
 blandit sit amet mauris. Mauris in hendrerit ante, ac maximus lacus. Sed in egestas sem, vel dignissim 
 ipsum. Duis euismod scelerisque sem, et elementum dui tempor non.`
+
+/** 5 Here's a multiline comment block
+ * 6 Testing the second line
+ 7 does this line get read 
+ 8 is this still a comment? */
+
+// 9 single comment at end 
