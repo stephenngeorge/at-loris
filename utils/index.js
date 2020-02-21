@@ -30,7 +30,13 @@ module.exports = {
       // just be treated as a .js file.
       ext: fileNamePartials[fileNamePartials.length - 1]
     }
-
+    // validate file type
+    // (make sure we have this language in our syntaxes object)
+    const validSyntax = ext => config.syntaxes.hasOwnProperty(ext)
+    if (!validSyntax(fileData.ext)) {
+      console.warn(`${fileData.name}.${fileData.ext}: unsupported file type...moving on!`)
+      return
+    }
     /**
      * ----------
      * SET REGEX
