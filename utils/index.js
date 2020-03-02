@@ -74,7 +74,7 @@ module.exports = {
               language: fileData.ext,
               fileName: fileData.name,
               lineNumber,
-              line: line.replace(/\//g, "").trim()
+              line
             }
             fileContents.push(comment)
             return
@@ -93,7 +93,7 @@ module.exports = {
               // initialise the 'lines' property with the line in question
               multiLineTemplate.lines = [{
                 lineNumber,
-                line: line.split(multiLineStart)[1].replace("*", "").trim()
+                line
               }]
               // setting state variable to true so all following lines
               // are included in the object, until the end pattern is matched
@@ -107,7 +107,7 @@ module.exports = {
               // the object.lines property
               multiLineTemplate.lines.push({
                 lineNumber,
-                line: line.replace("*", "").trim()
+                line
               })
               return
             }
@@ -119,7 +119,7 @@ module.exports = {
               // from this function)
               multiLineTemplate.lines.push({
                 lineNumber,
-                line: line.split(multiLineEnd)[0].trim()
+                line: line
               })
               fileContents.push(multiLineTemplate)
               // reset the multiLineTemplate so other multi line

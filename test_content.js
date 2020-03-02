@@ -1,7 +1,4 @@
-/** 1 Here's a multiline comment block
- * 2 Testing the second line
- 3 does this line get read 
- 4 is this still a comment? */
+// 1 Here's a multiline comment block "2 Testing" the second line
 
 const text = `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam mi metus, facilisis et eros a, 
 vehicula fringilla diam. Nam ornare dui sed tortor vulputate suscipit. Morbi non lorem tellus. 
