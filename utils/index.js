@@ -77,6 +77,7 @@ module.exports = {
               line
             }
             fileContents.push(comment)
+            // exit function, interface will proceed to next line
             return
           }
           /**
@@ -98,6 +99,7 @@ module.exports = {
               // setting state variable to true so all following lines
               // are included in the object, until the end pattern is matched
               isMultiLine = true
+              // exit function, interface will proceed to next line
               return
             }
             // --------------------
@@ -109,6 +111,7 @@ module.exports = {
                 lineNumber,
                 line
               })
+              // exit function, interface will proceed to next line
               return
             }
             // --------------------
@@ -127,6 +130,7 @@ module.exports = {
               // from a clean slate.
               multiLineTemplate = {}
               isMultiLine = false
+              // exit function, interface will proceed to next line              
               return
             }
           }
