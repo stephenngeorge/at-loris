@@ -8,7 +8,7 @@ const lineCounter = ((i = 0) => () => ++i)()
 module.exports = {
   // return contents of file as a string
   // @param file: string - url to the file that is to be read
-  getCommentBlock: file => {
+  getComments: file => {
     // initialise empty object for each file
     let multiLineTemplate = {}
     /**
@@ -32,7 +32,7 @@ module.exports = {
     }
     // validate file type
     // (make sure we have this language in our syntaxes object)
-    const validSyntax = ext => config.syntaxes.hasOwnProperty(ext)
+    const validSyntax = ext => config.syntax.hasOwnProperty(ext)
     if (!validSyntax(fileData.ext)) {
       console.warn(`${fileData.name}.${fileData.ext}: unsupported file type...moving on!`)
       return
@@ -46,7 +46,7 @@ module.exports = {
       multiLineEnd,
       multiLineStart,
       singleLineComment
-    } = config.syntaxes[fileData.ext]
+    } = config.syntax[fileData.ext]
 
     return new Promise((resolve, reject) => {
       try {

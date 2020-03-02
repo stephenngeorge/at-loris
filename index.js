@@ -1,9 +1,9 @@
 const path = require('path')
-const { getCommentBlock } = require('./utils')
+const { getComments } = require('./read-comments')
 
 const run = async () => {
-  const test = await getCommentBlock(path.resolve(process.cwd(), 'test_content.js'))
-  console.log(test)
+  const comments = await getComments(path.resolve(process.cwd(), 'test_content.js'))
+  console.log(comments)
 }
 
 run()

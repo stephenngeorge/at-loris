@@ -1,5 +1,5 @@
 module.exports = {
-  syntaxes: {
+  syntax: {
     html: {
       // matches the html comment syntax anywhere in the line
       singleLineComment: /<!--\s?[a-zA-Z0-9!-@\'\"\s]*\s?-->/,
